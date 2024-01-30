@@ -27,13 +27,15 @@ public class SimpleCharacter {
    * magicPerMile and magicRemaining are calculated based on the type of character.
    * @param land The type of land that the character lives in.
    * @param type The type of character.
+   * @param magicPerMile The amount of magic that the character consumes per mile.
+   * @param magicRemaining The amount of magic that the character has remaining.
    *
    */
   public SimpleCharacter(Land land, Type type, double magicPerMile, double magicRemaining) {
+    this.land = land;
+    this.type = type;
     this.magicPerMile = magicPerMile;
     this.magicRemaining = magicRemaining;
-
-    this.land = land;
   }
 
   /**

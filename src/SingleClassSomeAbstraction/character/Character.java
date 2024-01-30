@@ -29,6 +29,7 @@ public class Character {
    * @param type The type of character.
    *
    */
+
   public Character(Land land, Type type) {
 
     switch (type) {
@@ -43,10 +44,6 @@ public class Character {
       case FAIRY:
         this.magicPerMile = 3.0;
         this.magicRemaining = 15.0;
-        break;
-      default:
-        this.magicPerMile = 0.0;
-        this.magicRemaining = 0.0;
         break;
     }
 

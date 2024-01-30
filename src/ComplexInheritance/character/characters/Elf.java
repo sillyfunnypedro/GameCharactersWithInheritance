@@ -13,7 +13,7 @@ public class Elf extends CharacterAbstract {
    * @param land the land type of the character.
    */
   public Elf(Land land) {
-    super(4.0, 18.0, land);
+    super(2.0, 12.0, land);
     type = Type.ELF;
     this.land = land;
 

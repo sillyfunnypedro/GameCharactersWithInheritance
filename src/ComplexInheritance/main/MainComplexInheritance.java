@@ -1,15 +1,13 @@
-package ReallySimpleSolution.main;
+package ComplexInheritance.main;
 
-
-import ReallySimpleSolution.character.SimpleCharacter;
+import character.characters.Elf;
 import enums.Land;
-import enums.Type;
 
 /**
  * Main class which contains the main method.
  * It will do a very simple test on the Elf class.
  */
-public class SimpleMain {
+public class MainComplexInheritance {
   /**
    * Main method which will do a very simple test on the Elf class.
    * @param args the arguments.
@@ -18,7 +16,7 @@ public class SimpleMain {
   public static void main(String[] args) {
 
 
-    SimpleCharacter elf = new SimpleCharacter( Land.BOULDERFALL, Type.ELF, 2.0, 12.0);
+    Elf elf = new Elf(Land.BOULDERFALL);
 
     System.out.println("Elf's land is " + elf.getLand());
     System.out.println("Elf's health is " + elf.getMagicRemaining());
