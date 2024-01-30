@@ -1,4 +1,4 @@
-package character;
+package ReallySimpleSolution.character;
 
 import enums.Land;
 import enums.Type;
@@ -8,7 +8,7 @@ import exceptions.noPotionsLeftException;
 /**
  * Abstract class for the different types of characters in the game.
  */
-public class Character {
+public class SimpleCharacter {
   private final double magicPerMile;
 
   // This is a protected variable, which means that it can be accessed by subclasses.
@@ -29,26 +29,9 @@ public class Character {
    * @param type The type of character.
    *
    */
-  public Character(Land land, Type type) {
-
-    switch (type) {
-      case TROLL:
-        this.magicPerMile = 4;
-        this.magicRemaining = 18.0;
-        break;
-      case ELF:
-        this.magicPerMile = 2.0;
-        this.magicRemaining = 12.0;
-        break;
-      case FAIRY:
-        this.magicPerMile = 3.0;
-        this.magicRemaining = 15.0;
-        break;
-      default:
-        this.magicPerMile = 0.0;
-        this.magicRemaining = 0.0;
-        break;
-    }
+  public SimpleCharacter(Land land, Type type, double magicPerMile, double magicRemaining) {
+    this.magicPerMile = magicPerMile;
+    this.magicRemaining = magicRemaining;
 
     this.land = land;
   }

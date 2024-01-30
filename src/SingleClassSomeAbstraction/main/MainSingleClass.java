@@ -1,13 +1,15 @@
-package exceptions;
+package SingleClassSomeAbstraction.main;
 
-import character.characters.Elf;
 import enums.Land;
+import enums.Type;
+import SingleClassSomeAbstraction.character.Character;
+
 
 /**
  * Main class which contains the main method.
  * It will do a very simple test on the Elf class.
  */
-public class MainComplexInheritance {
+public class MainSingleClass {
   /**
    * Main method which will do a very simple test on the Elf class.
    * @param args the arguments.
@@ -16,7 +18,7 @@ public class MainComplexInheritance {
   public static void main(String[] args) {
 
 
-    Elf elf = new Elf(Land.BOULDERFALL);
+    Character elf = new Character( Land.BOULDERFALL, Type.ELF);
 
     System.out.println("Elf's land is " + elf.getLand());
     System.out.println("Elf's health is " + elf.getMagicRemaining());

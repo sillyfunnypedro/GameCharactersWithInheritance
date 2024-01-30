@@ -1,14 +1,15 @@
-package main;
+package ReallySimpleSolution.main;
 
+
+import ReallySimpleSolution.character.SimpleCharacter;
 import enums.Land;
 import enums.Type;
-import character.Character;
 
 /**
  * Main class which contains the main method.
  * It will do a very simple test on the Elf class.
  */
-public class MainSingleClass {
+public class SimpleMain {
   /**
    * Main method which will do a very simple test on the Elf class.
    * @param args the arguments.
@@ -17,7 +18,7 @@ public class MainSingleClass {
   public static void main(String[] args) {
 
 
-    Character elf = new Character( Land.BOULDERFALL, Type.ELF);
+    SimpleCharacter elf = new SimpleCharacter( Land.BOULDERFALL, Type.ELF, 2.0, 12.0);
 
     System.out.println("Elf's land is " + elf.getLand());
     System.out.println("Elf's health is " + elf.getMagicRemaining());
