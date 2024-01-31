@@ -45,6 +45,9 @@ public class Character {
         this.magicPerMile = 3.0;
         this.magicRemaining = 15.0;
         break;
+      default:
+        this.magicPerMile = -3.0;
+        this.magicRemaining = -30;
     }
 
     this.land = land;
